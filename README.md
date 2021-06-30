@@ -1,2 +1,5 @@
 # FloatingPointUnit
 A floating point unit capable of adding, subtracting and multiplying two IEEE 754 32-bit values.
+
+
+Floating Point Units (FPU) are integral to performing more precise mathematical operations. Our objective was to implement a Floating-Point Unit in Verilog that is capable of performing mathematical operations similar to an ALU but with floating-point values. The FPU is designed to perform addition and multiplication on single precision 32-bit IEEE 754 floating point values. The FPU takes two 32-bit values and depending on the control signal, multiplies or adds them. It was initially planned to have the FPU be capable of addition, multiplication, subtraction and division. However, there was significant difficulty in the implementation of division and subtraction, so the scope of the FPU was reduced. A testbench was written for the FPU to have it add and multiply six floating point values. It was found that the FPU is capable of adding and multiplying two positive floating-point values. As the addition and multiplication process requires shifting bits, some precision from the initial 32-bit floating point values were lost to rounding.
